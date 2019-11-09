@@ -59,5 +59,5 @@ dfStocksConsolidated.sort_index(ascending=False, inplace=True)
 dfStocksConsolidated.columns = list(df["companyName"])
 
 #Exporting to .csv
-df.to_csv("companies_stock_price.csv")
+dfStocksConsolidated.to_csv("companies_stock_price.csv")
 print("Companies stock price csv generated.")
