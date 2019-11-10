@@ -34,7 +34,7 @@ df_stocks.index.names = ['Date']
 df_final = df_stocks.join(df_gold).join(df_crypto)
 df_final = df_final.loc[df_final.index < '2019-04-24']
 col = ["AMZN", "BIDU", "AAPL", "BABA",  "FB", "TWTR", "GLD", "BTC", "BCH", "ADA", "ETH", "LTC", "XRT"]
-df_final.columns = pd.MultiIndex.from_tuples(zip(col, df_final.columns))
+df_final.columns = col
 
 #Exporting to .csv
 df_final.to_csv("df_final.csv")
