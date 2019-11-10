@@ -18,3 +18,9 @@ JavaScript error: https://www.usagold.com/js/bootstrap.min.js, line 6: Error: Bo
 JavaScript error: https://www.usagold.com/reference/prices/goldhistory.php?ddYears=2017, line 1934: TypeError: Netdania.renderHistoricalDataForInstrument is not a constructor
 JavaScript error: https://www.usagold.com/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires at least jQuery v1.9.1 but less than v4.0.0
 JavaScript error: https://www.usagold.com/reference/prices/goldhistory.php?ddYears=2018, line 1938: TypeError: Netdania.renderHistoricalDataForInstrument is not a constructor
+JavaScript error: https://www.usagold.com/js/utilities/jsapi.js?v=1.1, line 1: Error: Script failed to load [https://balancer8.netdania.com/StreamingServer/StreamingServer?dt=1&sessid=BC26622&xcmd=W3sidCI6MiwiaSI6MSwibSI6MSwicyI6IlhBVVVTRE9aIiwicCI6ImNvbXN0b2NrX2xpdGUiLCJ0cyI6MSwicHQiOjEwMDB9XQ..&cb=jXHR.cb13123], most probably due to an invalid URL or server error.
+JavaScript error: https://www.usagold.com/js/utilities/jsapi.js?v=1.1, line 1: Error: Script failed to load [https://balancer8.netdania.com/StreamingServer/StreamingServer?dt=1&sessid=BC26622&cb=jXHR.cb13124&xpoll&ts=0.5338894518479171], most probably due to an invalid URL or server error.
+[Parent 7747, Gecko_IOThread] WARNING: pipe error (73): Connection reset by peer: file /build/firefox-clezVp/firefox-70.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+[Parent 7747, Gecko_IOThread] WARNING: pipe error (94): Connection reset by peer: file /build/firefox-clezVp/firefox-70.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1573394021443	Marionette	INFO	Stopped listening on port 41089
