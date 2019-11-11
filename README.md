@@ -37,17 +37,18 @@ When executing main.py, we have available 5 arguments:
 
 ## Examples
 
-'''
+```
 
 python3 main.py -i AMZN AAPL GLD
 
-'''
+```
 
 This command generates a .png image containing a line chart with indexed price for Amazon, Apple and Gold.
 
-'''
+```
 
 python3 main.py -a
 
-'''
+```
+
 This command generates a .png image containing a line chart with price in USD for all companies.
