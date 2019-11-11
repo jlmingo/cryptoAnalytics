@@ -2,3 +2,5 @@
 .ipynb_checkpoints
 tests.ipynb
 /Trash
+__pycache__
+geckodriver.log
