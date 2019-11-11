@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import argparse
-from plot import plotTickers
+from plot import plotTickers, plotIndex, plotAll
+from pdf import createPDF
 
 d_help = {
     "AMZN": "Amazon",
@@ -18,29 +19,28 @@ d_help = {
     "XRT": "Ripple"
 }
 
-# parser = argparse.ArgumentParser()
-# parser.add_argument("-c", "--company", help="Selection of tickers to be analized. Available tickers:{}".format(d_help), nargs="+")
-# args = parser.parse_args()
-# plotTickers(args)
-
-
-# parser = argparse.ArgumentParser()
-# parser.add_argument('-l', '--list', help="Selection of tickers to be analized. Available tickers:{}".format(d_help), type=str)
-# args = parser.parse_args()
-# my_list = [item for item in args.list.split(',')]
-# plotTickers(my_list)
-
 def parse():
     parser = argparse.ArgumentParser()
     grupo = parser.add_mutually_exclusive_group()
     grupo.add_argument("-p", "--plot_prices", help="Plots line chart with evolution of prices.", action='store_true')
-    parser.add_argument('companies', help="Selection of tickers to be analized.\n Available tickers:{}".format(d_help), nargs="+")
+    grupo.add_argument("-i", "--plot_indexed", help="Plots line chart with indexed evolution of prices.", action='store_true')
+    grupo.add_argument("-f", "--file_pdf", help="Prints pdf with charts generated.", action='store_true')
+    parser.add_argument("-a", "--plot_all", help="Plots all available tickers' evolution of prices.", action='store_true')
+    parser.add_argument("-c", "--companies", help="Selection of tickers to be analized. Available tickers: {}".format(d_help), nargs="+", action="store")
     return parser.parse_args()
 
 def main():
     args = parse()
     print(args)
-    plotTickers(args.companies)
+    if args.plot_prices:
+        plotTickers(args.companies)
+    elif args.plot_indexed:
+        plotIndex(args.companies)
+    elif args.plot_all:
+        plotAll()
+    elif args.file_pdf:
+        createPDF()
+    print("The chart has been plotted.")
 
 if __name__=='__main__':
-	main()
+	main()  

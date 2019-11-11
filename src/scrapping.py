@@ -81,5 +81,6 @@ df_historical.set_index("Date", inplace=True)
 
 #Concatenating all data in one
 df = df_2019.append(df_historical)
+df.fillna(method='ffill')
 df.to_csv("gold_quotes_historical.csv")
 print("Gold quotes historical csv file generated")
