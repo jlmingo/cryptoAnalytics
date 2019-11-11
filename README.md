@@ -2,7 +2,7 @@
 
 ## Description
 
-This program takes daily prices for selected criptocurrencies, tech companies' stocks and gold.
+This program takes daily prices for selected cryptocurrencies, tech companies' stocks and gold.
 
 - Inputs come from:
     1. Database with daily pricing of all criptocurrencies [kaggle.com](kaggle.com)
@@ -11,18 +11,18 @@ This program takes daily prices for selected criptocurrencies, tech companies' s
 
 Available tickers for this program are:
 
-- AMZN: Amazon,
-- BIDU: Baidu,
-- AAPL: Apple,
-- BABA: Ali Baba,
-- FB: Facebook,
-- TWTR: Twitter,
-- GLD: Gold,
-- BTC: Bitcoin,
-- BCH: Bitcoin Cash,
-- ADA: Cardano,
-- ETH: Ethereum,
-- LTC: Litecoin,
+- AMZN: Amazon
+- BIDU: Baidu
+- AAPL: Apple
+- BABA: Ali Baba
+- FB: Facebook
+- TWTR: Twitter
+- GLD: Gold
+- BTC: Bitcoin
+- BCH: Bitcoin Cash
+- ADA: Cardano
+- ETH: Ethereum
+- LTC: Litecoin
 - XRT: Ripple
 
 ## How it works
@@ -39,10 +39,10 @@ When executing main.py, we have available 5 arguments:
 
 ```
 
-python3 main.py -i AMZN AAPL GLD
+python3 main.py -i -c AMZN AAPL GLD
 
 ```
-
+ 
 This command generates a .png image containing a line chart with indexed price for Amazon, Apple and Gold.
 
 ```
