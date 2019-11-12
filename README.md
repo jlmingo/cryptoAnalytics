@@ -29,11 +29,11 @@ Available tickers for this program are:
 
 When executing main.py, we have available 5 arguments:
 
-1. "--plot_prices" --> Plots line chart with evolution of prices NEEDS TICKERS INPUT
-2. "--plot_indexed" --> Plots line chart with indexed evolution of prices NEEDS TICKERS INPUT
-3. "--file_pdf" --> Prints pdf with charts generated previously THIS OPTION DOES NOT REQUIRE FURTHER INPUT
-4. "--plot_all" --> Plots all available tickers' evolution of prices. THIS OPTION DOES NOT REQUIRE FURTHER INPUT
-5. "--companies" --> Selection of tickers to be analized. MAXIMUM 6 TICKERS
+1. "--plot_prices": Plots line chart with evolution of prices NEEDS TICKERS INPUT
+2. "--plot_indexed": Plots line chart with indexed evolution of prices NEEDS TICKERS INPUT
+3. "--file_pdf": Prints pdf with charts generated previously THIS OPTION DOES NOT REQUIRE FURTHER INPUT
+4. "--plot_all": Plots all available tickers' evolution of prices. THIS OPTION DOES NOT REQUIRE FURTHER INPUT
+5. "--companies": Selection of tickers to be analized. MAXIMUM 6 TICKERS
 
 ## Examples
 
