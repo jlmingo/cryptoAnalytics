@@ -40,7 +40,8 @@ def main():
         plotAll()
     elif args.file_pdf:
         createPDF()
-    print("The chart has been plotted.")
+    if (args.plot_prices or args.plot_indexed or args.plot_all):
+        print("The chart has been plotted.")
 
 if __name__=='__main__':
 	main()  
