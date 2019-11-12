@@ -43,7 +43,7 @@ python3 main.py -i -c AMZN AAPL GLD
 
 ```
  
-This command generates a .png image containing a line chart with indexed price for Amazon, Apple and Gold.
+This command generates a .png image containing a line chart with indexed price for Amazon, Apple and Gold. This picture will be saved in **src** folder.
 
 ```
 
